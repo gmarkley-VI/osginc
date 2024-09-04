@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optimal Solutions Group, Inc.</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f5f5f5;
         }
         header {
             background-color: #000;
@@ -21,7 +28,9 @@
             padding: 2rem;
         }
         .logo {
+            width: 100%;
             max-width: 400px;
+            height: auto;
             margin-bottom: 1rem;
         }
         h1 {
@@ -32,9 +41,12 @@
             color: #000;
             border-bottom: 2px solid #000;
             padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
         }
         ul {
             padding-left: 20px;
+            margin-bottom: 1rem;
         }
         footer {
             margin-top: 2rem;
@@ -56,51 +68,72 @@
         section {
             margin-bottom: 2rem;
         }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            header {
+                padding: 1rem;
+            }
+            main {
+                padding: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Optimal Solutions Group Logo" class="logo">
+        <div class="container">
+            <img src="logo.png" alt="Optimal Solutions Group Logo" class="logo">
+        </div>
     </header>
-
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>Optimal Solutions Group, Inc. specializes in leadership and business consulting, offering tailored support and contracting services. Our experienced team provides strategic solutions to empower clients to overcome business challenges and achieve sustainable growth.</p>
-        </section>
-
-        <section>
-            <h2>Our Services</h2>
-            <ul>
-                <li>Organizational Development</li>
-                <li>Executive Coaching</li>
-                <li>Process Optimization</li>
-                <li>Change Management</li>
-                <li>Strategic Planning</li>
-                <li>Performance Improvement</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Why Choose Us?</h2>
-            <ul>
-                <li>Experienced consultants</li>
-                <li>Tailored solutions</li>
-                <li>Innovative strategies</li>
-                <li>Results-driven approach</li>
-                <li>Commitment to client success</li>
-            </ul>
-        </section>
-    </main>
-
+    <div class="container">
+        <main>
+            <section>
+                <h2>About Us</h2>
+                <p>Optimal Solutions Group, Inc. specializes in leadership and business consulting, offering tailored support and contracting services. Our experienced team provides strategic solutions to empower clients to overcome business challenges and achieve sustainable growth.</p>
+            </section>
+            <section>
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Organizational Development</li>
+                    <li>Executive Coaching</li>
+                    <li>Process Optimization</li>
+                    <li>Change Management</li>
+                    <li>Strategic Planning</li>
+                    <li>Performance Improvement</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li>Experienced consultants</li>
+                    <li>Tailored solutions</li>
+                    <li>Innovative strategies</li>
+                    <li>Results-driven approach</li>
+                    <li>Commitment to client success</li>
+                </ul>
+            </section>
+        </main>
+    </div>
     <footer>
-        <p>Contact Us:</p>
-        <address>
-            Optimal Solutions Group, Inc.<br>
-            8 The Green # 17118<br>
-            Dover, DE 19901
-        </address>
-        <p>&copy; 2024 Optimal Solutions Group, Inc. All rights reserved.</p>
+        <div class="container">
+            <p>Contact Us:</p>
+            <address>
+                Optimal Solutions Group, Inc.<br>
+                8 The Green # 17118<br>
+                Dover, DE 19901
+            </address>
+            <p>&copy; 2024 Optimal Solutions Group, Inc. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
